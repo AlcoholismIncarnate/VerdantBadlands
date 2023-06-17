@@ -3,16 +3,53 @@
 ////////////////////
 
 /obj/item/projectile/bullet/a556
-	name = "5.56 FMJ bullet"
+	name = "5.56 bullet"
 	damage = 26
 	armour_penetration = 0.25
 	wound_bonus = 18
 	bare_wound_bonus = 24
 
+/obj/item/projectile/bullet/a556/junk
+	name = "JNK 5.56 bullet"
+	damage = 12
+	armour_penetration = 0.1
+	wound_bonus = 9
+	bare_wound_bonus = 10
+
+/obj/item/projectile/bullet/a556/overpressure
+	name = "P+ 5.56 bullet"
+	damage = 20
+	armour_penetration = 0.3
+	wound_bonus = 10
+	bare_wound_bonus = 16
+
+/obj/item/projectile/bullet/a556/hollowpoint
+	name = "HP 5.56 bullet"
+	damage = 26
+	armour_penetration = 0.12
+	wound_bonus = 9
+	bare_wound_bonus = 24
+	supereffective_damage = 34
+	supereffective_faction = list("hostile", "ant", "deathclaw", "cazador", "china", "gecko", "radscorpion")
+
+/obj/item/projectile/bullet/a556/fmj
+	name = "FMJ 5.56 bullet"
+	damage = 28
+	armour_penetration = 0.32
+	wound_bonus = 20
+	bare_wound_bonus = 26
+
+/obj/item/projectile/bullet/a556/matchgrade
+	name = "MATCH 5.56 bullet"
+	damage = 30
+	armour_penetration = 0.35
+	wound_bonus = 22
+	bare_wound_bonus = 28
+
 // For use against simple mobs.
-// Also carries a fairly strong wound bonus, to make it viable in PvP.
+// Also carries a fairly strong wound bonus, to make it viable in PvP. < --- OOOO I HATE THIS! I HATE THIS SO MUCH! But I'll keep it in for now. Because I have plans.
 /obj/item/projectile/bullet/a556/a223
-	name = ".223 FMJ bullet"
+	name = ".223 bullet"
 	damage = 24
 	wound_bonus = 24
 	bare_wound_bonus = 32
@@ -22,13 +59,50 @@
 ////////////////////
 // 7.62 MM & .308 //
 ////////////////////
-
+// No P+ ammo. Overpressure 
 /obj/item/projectile/bullet/a762
-	name = "7.62 FMJ bullet"
+	name = "7.62 bullet"
 	damage = 34
 	armour_penetration = 0.35
 	wound_bonus = 28
 	bare_wound_bonus = 24
+
+/obj/item/projectile/bullet/a762/junk
+	name = "JNK 7.62 bullet"
+	damage = 18
+	armour_penetration = 0.15
+	wound_bonus = 14
+	bare_wound_bonus = 12
+
+/obj/item/projectile/bullet/a762/overpressure
+	name = "P+ 7.62 bullet"
+	damage = 28
+	armour_penetration = 0.4
+	wound_bonus = 20
+	bare_wound_bonus = 18
+
+/obj/item/projectile/bullet/a762/hollowpoint
+	name = "HP 7.62 bullet"
+	damage = 34
+	armour_penetration = 0.15
+	wound_bonus = 9
+	bare_wound_bonus = 30
+	supereffective_damage = 42
+	supereffective_faction = list("hostile", "ant", "deathclaw", "cazador", "china", "gecko", "radscorpion")
+
+/obj/item/projectile/bullet/a762/fmj
+	name = "FMJ 7.62 bullet"
+	damage = 36
+	armour_penetration = 0.37
+	wound_bonus = 30
+	bare_wound_bonus = 26
+
+/obj/item/projectile/bullet/a762/matchgrade
+	name = "MATCH 7.62 bullet"
+	damage = 38
+	armour_penetration = 0.40
+	wound_bonus = 30
+	bare_wound_bonus = 26
 
 // For use against simple mobs.
 // Also carries a fairly strong wound bonus, to make it viable in PvP.

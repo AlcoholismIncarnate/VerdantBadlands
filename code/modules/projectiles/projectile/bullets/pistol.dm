@@ -41,7 +41,7 @@
 
 /obj/item/projectile/bullet/c9mm/overpressure
 	name = "P+ 9mm bullet"
-	damage = 12
+	damage = 10
 	wound_bonus = 8
 	armour_penetration = 0.05
 
@@ -73,7 +73,7 @@
 
 /obj/item/projectile/bullet/c10mm/overpressure
 	name = "P+ 10mm bullet"
-	damage = 16
+	damage = 12
 	wound_bonus = 20
 	armour_penetration = 0.05
 
@@ -105,7 +105,7 @@
 
 /obj/item/projectile/bullet/c45/overpressure
 	name = "P+ .45 bullet"
-	damage = 20
+	damage = 16
 	wound_bonus = 11
 	armour_penetration = 0.08
 
@@ -144,7 +144,7 @@
 
 /obj/item/projectile/bullet/a357/overpressure
 	name = "P+ .357 bullet"
-	damage = 24
+	damage = 18
 	wound_bonus = 16
 	armour_penetration = 0.08
 
@@ -181,7 +181,7 @@
 
 /obj/item/projectile/bullet/m44/overpressure
 	name = "P+ .357 bullet"
-	damage = 24
+	damage = 18
 	wound_bonus = 16
 	armour_penetration = 0.08
 
@@ -212,7 +212,7 @@
 
 /obj/item/projectile/bullet/m50/overpressure
 	name = "P+ .50AE bullet"
-	damage = 28
+	damage = 26
 	wound_bonus = 20
 	bare_wound_bonus = -20
 	armour_penetration = 0.12

@@ -663,12 +663,12 @@
 /obj/effect/spawner/lootdrop/f13/ammo_civilian
 	name = "ammospawner civilian"
 	loot = list(
-		/obj/item/ammo_box/c10mm/improvised = 10,
+		/obj/item/ammo_box/c10mm/junk = 10,
 		/obj/item/ammo_box/shotgun/improvised = 10,
-		/obj/item/ammo_box/c38box/improvised = 10,
-		/obj/item/ammo_box/m44box/improvised = 10,
+		/obj/item/ammo_box/c38box/junk = 10,
+		/obj/item/ammo_box/m44box/junk = 10,
 		/obj/item/ammo_box/a556/a223 = 5,
-		/obj/item/ammo_box/c45/improvised = 5,
+		/obj/item/ammo_box/c45/junk = 5,
 		/obj/item/ammo_box/shotgun/buck = 5,
 		/obj/item/ammo_box/c38 = 5,
 		/obj/item/ammo_box/m22 = 5,

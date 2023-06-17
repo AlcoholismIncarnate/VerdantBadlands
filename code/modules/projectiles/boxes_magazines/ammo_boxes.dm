@@ -47,11 +47,21 @@
 	icon_state = "ammobox"
 	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/a22
-	max_ammo = 40
+	max_ammo = 30
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/iron = 6000, /datum/material/blackpowder = 1000)
 
-//9mm and .38
+/obj/item/ammo_box/m22/junk
+	name = "Bag of Junk .22"
+	desc = "Baggie full of low-quality .22 rounds."
+	max_ammo = 60
+	ammo_type = /obj/item/ammo_casing/a22
+	icon_state = "improvshotbag"
+	multiple_sprites = 3
+	custom_materials = list(/datum/material/iron = 3000, /datum/material/blackpowder = 500)
+
+
+//9mm
 /obj/item/ammo_box/c9mm
 	name = "ammo box (9mm)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
@@ -62,12 +72,39 @@
 	max_ammo = 30
 	custom_materials = list(/datum/material/iron = 15000, /datum/material/blackpowder = 1000)
 
-/obj/item/ammo_box/c9mm/improv
-	name = "bag with reloaded 9mm bullets"
-	desc = "The casings are worn, the gunpowder some homebrew mix of dubious quality. At least it goes bang."
+/obj/item/ammo_box/c9mm/overpressure
+	name = "ammo box (P+ 9mm)"
+	icon_state = "9mmbox"
+	ammo_type = /obj/item/ammo_casing/c9mm/overpressure
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 15000, /datum/material/blackpowder = 3000)
+
+/obj/item/ammo_box/c9mm/fmj
+	name = "ammo box (FMJ 9mm)"
+	icon_state = "9mmbox"
+	ammo_type = /obj/item/ammo_casing/c9mm/fmj
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 30000, /datum/material/blackpowder = 3000)
+
+/obj/item/ammo_box/c9mm/match
+	name = "ammo box (MATCH 9mm)"
+	icon_state = "9mmbox"
+	multiple_sprites = 2
+	ammo_type = /obj/item/projectile/bullet/c9mm/matchgrade
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 30000, /datum/material/blackpowder = 3000)
+
+/obj/item/ammo_box/c9mm/junk
+	name = "Bag of (JUNK 9mm)"
+	desc = "Baggie full of low-quality 9mm rounds."
+	max_ammo = 60
+	ammo_type = /obj/item/ammo_casing/c9mm/junk
 	icon_state = "improvshotbag"
 	multiple_sprites = 3
+	custom_materials = list(/datum/material/iron = 7500, /datum/material/blackpowder = 500)
 
+
+// .38
 /obj/item/ammo_box/c38box
 	name = "ammo box (.38)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
@@ -78,11 +115,14 @@
 	max_ammo = 30
 	custom_materials = list(/datum/material/iron = 10000, /datum/material/blackpowder = 1000)
 
-/obj/item/ammo_box/c38box/improvised
-	name = "bag with reloaded .38 bullets"
-	desc = "The casings are worn, the gunpowder some homebrew mix of dubious quality. At least it goes bang."
+/obj/item/ammo_box/c38box/junk
+	name = "Bag of (JUNK .38)"
+	desc = "Baggie full of low-quality .38 rounds."
+	max_ammo = 60
+	ammo_type = /obj/item/ammo_casing/c38/junk
 	icon_state = "improvshotbag"
 	multiple_sprites = 3
+	custom_materials = list(/datum/material/iron = 7500, /datum/material/blackpowder = 500)
 
 //10mm
 /obj/item/ammo_box/c10mm
@@ -95,15 +135,42 @@
 	max_ammo = 30
 	custom_materials = list(/datum/material/iron = 10000, /datum/material/blackpowder = 1000)
 
-/obj/item/ammo_box/c10mm/improvised
-	name = "bag with reloaded 10mm bullets"
-	desc = "The casings are worn, the gunpowder some homebrew mix of dubious quality. At least it goes bang."
+/obj/item/ammo_box/c10mm/overpressure
+	name = "ammo box (P+ 10mm)"
+	icon_state = "10mmbox"
+	multiple_sprites = 2
+	ammo_type = /obj/item/ammo_casing/c10mm/overpressure
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 10000, /datum/material/blackpowder = 3000)
+
+/obj/item/ammo_box/c10mm/fmj
+	name = "ammo box (FMJ 10mm)"
+	icon_state = "10mmbox"
+	multiple_sprites = 2
+	ammo_type = /obj/item/ammo_casing/c10mm/fmj
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 0000, /datum/material/blackpowder = 1000)
+
+/obj/item/ammo_box/c10mm/match
+	name = "ammo box (MATCH 10mm)"
+	icon_state = "10mmbox"
+	multiple_sprites = 2
+	ammo_type = /obj/item/projectile/bullet/c10mm/matchgrade
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 30000, /datum/material/blackpowder = 3000)
+
+/obj/item/ammo_box/c10mm/junk
+	name = "Bag of (JUNK 10mm)"
+	desc = "Baggie full of low-quality 10mm rounds."
+	max_ammo = 60
+	ammo_type = /obj/item/ammo_casing/c10mm/junk
 	icon_state = "improvshotbag"
 	multiple_sprites = 3
+	custom_materials = list(/datum/material/iron = 7500, /datum/material/blackpowder = 500)
 
 //.357 Magnum
 /obj/item/ammo_box/a357box
-	name = "ammo box (.357 Magnum FMJ)"
+	name = "ammo box (.357 Magnum)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "357box"
 	multiple_sprites = 2
@@ -113,15 +180,42 @@
 	custom_materials = list(/datum/material/iron = 16000, /datum/material/blackpowder = 1000)
 	w_class = WEIGHT_CLASS_NORMAL
 
-/obj/item/ammo_box/a357box/improvised
-	name = "bag with reloaded .357 bullets"
-	desc = "The casings are worn, the gunpowder some homebrew mix of dubious quality. At least it goes bang."
+/obj/item/ammo_box/a357box/overpressure
+	name = "ammo box (P+ .357 Magnum)"
+	icon_state = "357box"
+	multiple_sprites = 2
+	ammo_type = /obj/item/ammo_casing/a357/overpressure
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 16000, /datum/material/blackpowder = 3000)
+
+/obj/item/ammo_box/a357box/fmj
+	name = "ammo box (FMJ .357 Magnum)"
+	icon_state = "357box"
+	multiple_sprites = 2
+	ammo_type = /obj/item/ammo_casing/a357/fmj
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 32000, /datum/material/blackpowder = 3000)
+
+/obj/item/ammo_box/a357box/match
+	name = "ammo box (MATCH .357 Magnum)"
+	icon_state = "357box"
+	multiple_sprites = 2
+	ammo_type = /obj/item/projectile/bullet/a357/matchgrade
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 32000, /datum/material/blackpowder = 3000)
+
+/obj/item/ammo_box/a357box/junk
+	name = "Bag of (JUNK .357 Magnum)"
+	desc = "Baggie full of low-quality .357 Magnum rounds."
+	max_ammo = 60
+	ammo_type = /obj/item/ammo_casing/a357/junk
 	icon_state = "improvshotbag"
 	multiple_sprites = 3
+	custom_materials = list(/datum/material/iron = 8000, /datum/material/blackpowder = 500)
 
 //.44 Magnum
 /obj/item/ammo_box/m44box
-	name = "ammo box (.44 Magnum FMJ)"
+	name = "ammo box (.44 Magnum)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "44box"
 	multiple_sprites = 2
@@ -131,11 +225,38 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	custom_materials = list(/datum/material/iron = 14000, /datum/material/blackpowder = 1000)
 
-/obj/item/ammo_box/m44box/improvised
-	name = "bag with reloaded .44 bullets"
-	desc = "The casings are worn, the gunpowder some homebrew mix of dubious quality. At least it goes bang."
+/obj/item/ammo_box/m44box/overpressure
+	name = "ammo box (P+ .44 Magnum)"
+	icon_state = "44box"
+	multiple_sprites = 2
+	ammo_type = /obj/item/ammo_casing/m44/overpressure
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 14000, /datum/material/blackpowder = 3000)
+
+/obj/item/ammo_box/m44box/fmj
+	name = "ammo box (FMJ .44 Magnum)"
+	icon_state = "44box"
+	multiple_sprites = 2
+	ammo_type = /obj/item/ammo_casing/m44/fmj
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 28000, /datum/material/blackpowder = 1000)
+
+/obj/item/ammo_box/m44box/match
+	name = "ammo box (MATCH .44 Magnum)"
+	icon_state = "44box"
+	multiple_sprites = 2
+	ammo_type = /obj/item/projectile/bullet/m44/matchgrade
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 28000, /datum/material/blackpowder = 3000)
+
+/obj/item/ammo_box/m44box/junk
+	name = "Bag of (JUNK .44 Magnum)"
+	desc = "Baggie full of low-quality .44 Magnum rounds."
+	max_ammo = 60
+	ammo_type = /obj/item/ammo_casing/m44/junk
 	icon_state = "improvshotbag"
-	multiple_sprites = 1
+	multiple_sprites = 3
+	custom_materials = list(/datum/material/iron = 7000, /datum/material/blackpowder = 500)
 
 
 // .45 ACP
@@ -149,11 +270,39 @@
 	max_ammo = 30
 	custom_materials = list(/datum/material/iron = 10000, /datum/material/blackpowder = 1000)
 
-/obj/item/ammo_box/c45/improvised
-	name = "bag with reloaded .45 ACP bullets"
-	desc = "The casings are worn, the gunpowder some homebrew mix of dubious quality. At least it goes bang."
+/obj/item/ammo_box/c45/overpressure
+	name = "ammo box (P+ .45 ACP)"
+	icon_state = "45box"
+	multiple_sprites = 2
+	ammo_type = /obj/item/ammo_casing/c45/overpressure
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 10000, /datum/material/blackpowder = 3000)
+
+/obj/item/ammo_box/c45/fmj
+	name = "ammo box (FMJ .45 ACP)"
+	icon_state = "45box"
+	multiple_sprites = 2
+	ammo_type = /obj/item/ammo_casing/c45/fmj
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 1000)
+
+/obj/item/ammo_box/c45/match
+	name = "ammo box (MATCH .45 ACP)"
+	icon_state = "45box"
+	multiple_sprites = 2
+	ammo_type = /obj/item/projectile/bullet/c45/matchgrade
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 1000)
+
+/obj/item/ammo_box/c45/junk
+	name = "Bag of (JUNK .45 ACP)"
+	desc = "Baggie full of low-quality .45 ACP rounds."
+	max_ammo = 60
+	ammo_type = /obj/item/ammo_casing/c45/junk
 	icon_state = "improvshotbag"
-	multiple_sprites = 1
+	multiple_sprites = 3
+	custom_materials = list(/datum/material/iron = 5000, /datum/material/blackpowder = 500)
+
 
 //.50 AE - PLAYERS SHOULD NEVER BE ABLE TO SEE THIS OUTSIDE OF ADMIN INTERVENTION.
 /obj/item/ammo_box/m50box
@@ -175,7 +324,7 @@
 
 //.45-70 Gov't
 /obj/item/ammo_box/c4570box
-	name = "ammo box (.45-70 FMJ)"
+	name = "ammo box (.45-70)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "4570box"
 	multiple_sprites = 2
@@ -184,6 +333,14 @@
 	max_ammo = 30
 	w_class = WEIGHT_CLASS_NORMAL
 	custom_materials = list(/datum/material/iron = 16000, /datum/material/blackpowder = 1500)
+
+/obj/item/ammo_box/c4570box/match
+	name = "ammo box (MATCH .45-70)"
+	icon_state = "4570box"
+	multiple_sprites = 2
+	ammo_type = /obj/item/projectile/bullet/c4570/matchgrade
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 32000, /datum/material/blackpowder = 6000)
 
 //5mm
 /obj/item/ammo_box/m5mmbox
@@ -199,7 +356,7 @@
 
 //5.56x45
 /obj/item/ammo_box/a556
-	name = "ammo box (5.56 FMJ)"
+	name = "ammo box (5.56)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "556box"
 	multiple_sprites = 2
@@ -209,17 +366,51 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	custom_materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 1000)
 
+/obj/item/ammo_box/a556/overpressure
+	name = "ammo box (P+ 5.56)"
+	icon_state = "556box"
+	multiple_sprites = 2
+	ammo_type = /obj/item/ammo_casing/a556/overpressure
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 20000, /datum/material/blackpowder = 3000)
+
+/obj/item/ammo_box/a556/fmj
+	name = "ammo box (FMJ 5.56)"
+	icon_state = "556box"
+	multiple_sprites = 2
+	ammo_type = /obj/item/ammo_casing/a556/fmj
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 40000, /datum/material/blackpowder = 3000)
+
+/obj/item/ammo_box/a556/hollowpoint
+	name = "ammo box (HP 5.56)"
+	icon_state = "556box"
+	multiple_sprites = 2
+	ammo_type = /obj/item/ammo_casing/a556/hollowpoint
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 40000, /datum/material/blackpowder = 1000)
+
+/obj/item/ammo_box/a556/match
+	name = "ammo box (MATCH 5.56)"
+	icon_state = "556box"
+	multiple_sprites = 2
+	ammo_type = /obj/item/projectile/bullet/a556/matchgrade
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 40000, /datum/material/blackpowder = 3000)
+
+/obj/item/ammo_box/a556/junk
+	name = "Bag of (JUNK 5.56)"
+	desc = "Baggie full of low-quality 5.56 rounds."
+	max_ammo = 60
+	ammo_type = /obj/item/ammo_casing/a556/junk
+	icon_state = "improvshotbag"
+	multiple_sprites = 3
+	custom_materials = list(/datum/material/iron = 10000, /datum/material/blackpowder = 500)
+
 /obj/item/ammo_box/a556/a223
 	name = "ammo box (.223 sport)"
 	ammo_type = /obj/item/ammo_casing/a556/a223
 	custom_materials = list(/datum/material/iron = 16000, /datum/material/blackpowder = 1000)
-
-/obj/item/ammo_box/a556/sport/improvised
-	name = "bag with reloaded .223 bullets"
-	desc = "The casings are worn, the gunpowder some homebrew mix of dubious quality. At least it goes bang."
-	multiple_sprites = 3
-	icon_state = "improvshotbag"
-
 
 //7.62x51, .308 Winchester
 /obj/item/ammo_box/a308box
@@ -234,7 +425,7 @@
 	custom_materials = list(/datum/material/iron = 14000, /datum/material/blackpowder = 1000)
 
 /obj/item/ammo_box/a762box
-	name = "ammo box (7.62x51 FMJ)"
+	name = "ammo box (7.62x51)"
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
 	icon_state = "762box"
 	multiple_sprites = 2
@@ -243,6 +434,47 @@
 	max_ammo = 30
 	w_class = WEIGHT_CLASS_NORMAL
 	custom_materials = list(/datum/material/iron = 16000, /datum/material/blackpowder = 1000)
+
+/obj/item/ammo_box/a762box/overpressure
+	name = "ammo box (P+ 7.62x51)"
+	icon_state = "762box"
+	multiple_sprites = 2
+	ammo_type = /obj/item/ammo_casing/a762/overpressure
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 16000, /datum/material/blackpowder = 3000)
+
+/obj/item/ammo_box/a762box/fmj
+	name = "ammo box (FMJ 7.62x51)"
+	icon_state = "762box"
+	multiple_sprites = 2
+	ammo_type = /obj/item/ammo_casing/a762/fmj
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 32000, /datum/material/blackpowder = 3000)
+
+/obj/item/ammo_box/a762box/hollowpoint
+	name = "ammo box (HP 7.62x51)"
+	icon_state = "762box"
+	multiple_sprites = 2
+	ammo_type = /obj/item/ammo_casing/a762/hollowpoint
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 32000, /datum/material/blackpowder = 1000)
+
+/obj/item/ammo_box/a762box/match
+	name = "ammo box (MATCH 7.62x51)"
+	icon_state = "762box"
+	multiple_sprites = 2
+	ammo_type = /obj/item/projectile/bullet/a762/matchgrade
+	max_ammo = 30
+	custom_materials = list(/datum/material/iron = 32000, /datum/material/blackpowder = 3000)
+
+/obj/item/ammo_box/a762box/junk
+	name = "Bag of (JUNK 7.62x51)"
+	desc = "Baggie full of low-quality 7.62x51 rounds."
+	max_ammo = 60
+	ammo_type = /obj/item/ammo_casing/a762/junk
+	icon_state = "improvshotbag"
+	multiple_sprites = 3
+	custom_materials = list(/datum/material/iron = 6000, /datum/material/blackpowder = 500)
 
 //.50 MG and 14mm
 /obj/item/ammo_box/a50MGbox
