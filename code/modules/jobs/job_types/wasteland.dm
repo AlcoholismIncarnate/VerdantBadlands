@@ -116,7 +116,8 @@
 		/obj/item/toy/crayon/spraycan = 1,
 		/obj/item/cultivator = 1,
 		/obj/item/reagent_containers/glass/bucket = 1,
-		/obj/item/storage/bag/plants/portaseeder = 1,)
+		/obj/item/storage/bag/plants/portaseeder = 1)
+		
 // Bonecutter - Bonecutter don't exactly have the best medical skills in the wasteland. But they're still invaluable compared to most! For medically focused players.
 /datum/outfit/loadout/bonecutter
 	name = "Bonecutter"
@@ -134,7 +135,8 @@
 							/obj/item/folder=1,
 							/obj/item/pen/fountain=1,
 							/obj/item/storage/firstaid/ancient=1,
-							/obj/item/book/granter/trait/lowsurgery =1,)
+							/obj/item/book/granter/trait/lowsurgery =1)
+							
 // Chemrunner - Chemrunners aren't exactly the most reliable folks in the wasteland, but they can find a strong niche.
 /datum/outfit/loadout/chemrunner
 	name = "Chem-Runner"
